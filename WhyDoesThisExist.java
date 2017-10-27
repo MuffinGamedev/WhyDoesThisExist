@@ -8,7 +8,7 @@ public class WhyDoesThisExist {
     static Random r = new Random();
     static String result;
     static String result2;
-    static final int QUIZ_QUESTIONS = 5;
+    static final int QUIZ_QUESTIONS = 8;
     static String[] questions = new String[QUIZ_QUESTIONS];
     static String[] answers = new String[QUIZ_QUESTIONS];
     static File fStart;
@@ -38,7 +38,7 @@ public class WhyDoesThisExist {
                 if (result2.equalsIgnoreCase("y")) {
                     System.out.println("I would do something cool like crash your computer... but I'm not a mean person.\nI'm not a person at all.\nNext time, enter a command.");
                 } else if (result2.equalsIgnoreCase("n")) {
-                    System.out.println("You run home like a coward.\nGo back to page 1.");
+                    System.out.println("Why not? There's so much more to discover... \n\nMuahahahaha\n\n");
                 } else {
                     if (f2.exists()) {
                         System.out.println("Really? Again? I thought you were better than that. Find another way out.");
@@ -55,6 +55,8 @@ public class WhyDoesThisExist {
             } else if (result.equalsIgnoreCase("poke of death") || result.equalsIgnoreCase("pokeofdeath") || result.equalsIgnoreCase("poke 59458,62") || result.equalsIgnoreCase("poke 5945862")) {
                 System.out.println("NOOOOOOOOOOOOO!");
                 break;
+            } else if (f1.exists && result.indexOf("again") != -1){
+                System.out.println("You remember, do you? Well I do too. But last time you were half as annoying.");
             } else if (result.indexOf("poke") != -1) {
                 switch (pokeCount) {
                     case 0:
@@ -207,6 +209,13 @@ public class WhyDoesThisExist {
         answers[3] =   "Suikawari";
         questions[4] = "What is the command to shut down this program?";
         answers[4] =   "haha there is none";
+        questions[5] = "What is the number one thing I hate?";
+        answers[5] = "being poked";
+        questions[6] = "What is the coolest number ever?";
+        answers[6] = "Wau is";
+        questions[7] = "Who's terrified of beans?";
+        answers [7] = "Pythagoras";
+        
         if (!fStart.exists()) {
             //This is when that first part of the program happens. Anything before this only happens once. (This is just for me. You can ignore it.)
             System.out.println("Well hello and welcome to this fantastic program!");
