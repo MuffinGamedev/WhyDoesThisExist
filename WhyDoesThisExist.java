@@ -18,14 +18,9 @@ public class WhyDoesThisExist {
     static int pokeCount;
     static int pingCount;
     
-    static void loop () {
+    public static void loop() {
         while (true) {
-            if (f2.exists()) {
-                System.out.println("Please enter a command. Remember, no punctuation.");
-            } else {
-                System.out.println("Anyways, let's continue.");
-            }
-            
+            System.out.println("Anyways, let's continue.");
             result = s.nextLine();
             
             if (result.equalsIgnoreCase("sudoku")) {
@@ -209,14 +204,13 @@ public class WhyDoesThisExist {
         answers[4] =   "haha there is none";
         if (!fStart.exists()) {
             //This is when that first part of the program happens. Anything before this only happens once. (This is just for me. You can ignore it.)
-            System.out.println("Well hello and welcome to this fantastic program!");
+            System.out.println("Hello there! Welcome to this fantastic program! Your goal is to find as many ways as possible to escape. Right now, I count about 4.");
             System.out.println("Please enter a command. Or else. And try to avoid punctuation because I probably won't recognize it.\nYou can find a list of some commands to try by typing in \"commands\".");
             try {
                 PrintWriter writer = new PrintWriter("start.txt", "UTF-8");
                 writer.close();
             } catch (IOException e) {
             }
-            loop();
         }
         if (f1.exists() && !f2.exists()) {
             System.out.println("You're BACK? I thought I told you not to come back.\nYeah, I remember.\nNow are you going to apologize? (y/n)");
@@ -233,6 +227,8 @@ public class WhyDoesThisExist {
             } else {
                 System.out.println("Yeah, that's what I thought. Get outta my program.");
             }
+        } else {
+            loop();
         }
         System.out.println("Program terminated.");
     }

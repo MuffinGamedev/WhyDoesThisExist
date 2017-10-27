@@ -20,12 +20,7 @@ public class WhyDoesThisExist {
     
     static void loop () {
         while (true) {
-            if (f2.exists()) {
-                System.out.println("Please enter a command. Remember, no punctuation.");
-            } else {
-                System.out.println("Anyways, let's continue.");
-            }
-            
+            System.out.println("Anyways, let's continue.");
             result = s.nextLine();
             
             if (result.equalsIgnoreCase("sudoku")) {
@@ -103,6 +98,8 @@ public class WhyDoesThisExist {
                 System.out.println("Once upon a time, someone decided to launch this program.\nThen they tried asking it stuff and realized that they only get sarcastic responses. Because I hate you\nAnd they all lived happily ever after. The end.");
             } else if (result.indexOf("homework") != -1) {
                 System.out.println("Jellybeans jellybeans jellybeans.");
+            } else if (result.indexOf("pythagoras") != -1) {
+                System.out.println("BLARGH BEANS"); // Context: youtu.be/X1E7I7_r3Cw
             } else if (result.equalsIgnoreCase("quiz")) {
                 int points = 0;
                 boolean correct;
@@ -179,7 +176,7 @@ public class WhyDoesThisExist {
             } else if (result.indexOf("commands") != -1) {
                 System.out.println("All right, fine. Here's a list of the commands that aren't super tippy top secret:\npoke\nquit\nwho are you\ntell me a joke\ntell me a story\ndo my homework\nquiz\npingpong\ngetouttamahface");
             } else if (result.indexOf("I") >= 0){
-                System.out.println("It's all abobut \"me me me\" isn't it? I'm here too! Hello!\nI don't care about your life!\nLeave me alone!\nI want to go hang out with Siri, Cortana, SkyNet, and all of my other AI friends.");
+                System.out.println("It's all abobut \"me me me\" isn't it? I'm here too! Hello!\nI don't care about your life!\nLeave me alone!\nI want to go hang out with Siri, Cortana, SkyNet, LetsBreakTheComputer.java, and all of my other AI friends.");
             } else {
                 System.out.println("Come on, put in an actual command!");
             }
@@ -207,7 +204,7 @@ public class WhyDoesThisExist {
         answers[4] =   "haha there is none";
         if (!fStart.exists()) {
             //This is when that first part of the program happens. Anything before this only happens once. (This is just for me. You can ignore it.)
-            System.out.println("Well hello and welcome to this fantastic program!");
+            System.out.println("Hello there! Welcome to this fantastic program! Your goal is to find as many ways as possible to escape. Right now, I count about 4.");
             System.out.println("Please enter a command. Or else. And try to avoid punctuation because I probably won't recognize it.\nYou can find a list of some commands to try by typing in \"commands\".");
             try {
                 PrintWriter writer = new PrintWriter("start.txt", "UTF-8");
