@@ -11,7 +11,6 @@ public class WhyDoesThisExist {
     static final int QUIZ_QUESTIONS = 8;
     static String[] questions = new String[QUIZ_QUESTIONS];
     static String[] answers = new String[QUIZ_QUESTIONS];
-    static File fStart;
     static File f1;
     static File f2;
     static File f3;
@@ -20,11 +19,7 @@ public class WhyDoesThisExist {
     
     static void loop () {
         while (true) {
-            if (f2.exists()) {
-                System.out.println("Please enter a command. Remember, no punctuation.");
-            } else {
-                System.out.println("Anyways, let's continue.");
-            }
+            System.out.println("Anyways, let's continue.");
             
             result = s.nextLine();
             
@@ -191,7 +186,6 @@ public class WhyDoesThisExist {
     }
     
     public static void main (String args[]) {
-        fStart = new File("start.txt");
         f1 = new File("youreahorribleperson.txt");
         f2 = new File("notahorribleperson.txt");
         pokeCount = 0;
@@ -210,23 +204,12 @@ public class WhyDoesThisExist {
         questions[4] = "What is the command to shut down this program?";
         answers[4] =   "haha there is none";
         questions[5] = "What is the number one thing I hate?";
-        answers[5] = "being poked";
+        answers[5] = "Being poked";
         questions[6] = "What is the coolest number ever?";
-        answers[6] = "Wau is";
+        answers[6] = "Wau";
         questions[7] = "Who's terrified of beans?";
         answers [7] = "Pythagoras";
-        //there was an ! right before the fStart.exists() that's proabably whst messed it up everytime after the first time i ran it. I think it's fixed now.
-        if (fStart.exists()) {
-            //This is when that first part of the program happens. Anything before this only happens once. (This is just for me. You can ignore it.)
-            System.out.println("Well hello and welcome to this fantastic program!");
-            System.out.println("Please enter a command. Or else. And try to avoid punctuation because I probably won't recognize it.\nYou can find a list of some commands to try by typing in \"commands\".");
-            try {
-                PrintWriter writer = new PrintWriter("start.txt", "UTF-8");
-                writer.close();
-            } catch (IOException e) {
-            }
-            loop();
-        }
+        //This is when that first part of the program happens. Anything before this only happens once. (This is just for me. You can ignore it.)
         if (f1.exists() && !f2.exists()) {
             System.out.println("You're BACK? I thought I told you not to come back.\nYeah, I remember.\nNow are you going to apologize? (y/n)");
             result = s.nextLine();
@@ -242,6 +225,10 @@ public class WhyDoesThisExist {
             } else {
                 System.out.println("Yeah, that's what I thought. Get outta my program.");
             }
+        } else {
+            System.out.println("Hello there! Welcome to this fantastic program! Your goal is to find as many ways as possible to escape. Right now, I count about 4.");
+            System.out.println("Please enter a command. Or else. And try to avoid punctuation because I probably won't recognize it.\nYou can find a list of some commands to try by typing in \"commands\".");
+            loop();
         }
         System.out.println("Program terminated.");
     }
