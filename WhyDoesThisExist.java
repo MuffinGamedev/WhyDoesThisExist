@@ -55,7 +55,7 @@ public class WhyDoesThisExist {
             } else if (result.equalsIgnoreCase("poke of death") || result.equalsIgnoreCase("pokeofdeath") || result.equalsIgnoreCase("poke 59458,62") || result.equalsIgnoreCase("poke 5945862")) {
                 System.out.println("NOOOOOOOOOOOOO!");
                 break;
-            } else if (f1.exists && result.indexOf("again") != -1){
+            } else if (f1.exists() && result.indexOf("again") != -1){
                 System.out.println("You remember, do you? Well I do too. But last time you were half as annoying.");
             } else if (result.indexOf("poke") != -1) {
                 switch (pokeCount) {
@@ -215,8 +215,8 @@ public class WhyDoesThisExist {
         answers[6] = "Wau is";
         questions[7] = "Who's terrified of beans?";
         answers [7] = "Pythagoras";
-        
-        if (!fStart.exists()) {
+        //there was an ! right before the fStart.exists() that's proabably whst messed it up everytime after the first time i ran it. I think it's fixed now.
+        if (fStart.exists()) {
             //This is when that first part of the program happens. Anything before this only happens once. (This is just for me. You can ignore it.)
             System.out.println("Well hello and welcome to this fantastic program!");
             System.out.println("Please enter a command. Or else. And try to avoid punctuation because I probably won't recognize it.\nYou can find a list of some commands to try by typing in \"commands\".");
