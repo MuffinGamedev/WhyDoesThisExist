@@ -33,7 +33,7 @@ public class WhyDoesThisExist {
                 if (result2.equalsIgnoreCase("y")) {
                     System.out.println("I would do something cool like crash your computer... but I'm not a mean person.\nI'm not a person at all.\nNext time, enter a command.");
                 } else if (result2.equalsIgnoreCase("n")) {
-                    System.out.println("Why not? There's so much more to discover... \n\nMuahahahaha\n\n");
+                    System.out.println("Why not? There's so much more to discover... \n\nMuahahahaha");
                 } else {
                     if (f2.exists()) {
                         System.out.println("Really? Again? I thought you were better than that. Find another way out.");
@@ -50,9 +50,9 @@ public class WhyDoesThisExist {
             } else if (result.equalsIgnoreCase("poke of death") || result.equalsIgnoreCase("pokeofdeath") || result.equalsIgnoreCase("poke 59458,62") || result.equalsIgnoreCase("poke 5945862")) {
                 System.out.println("NOOOOOOOOOOOOO!");
                 break;
-            } else if (f1.exists() && result.indexOf("again") != -1){
+            } else if (f1.exists() && result.contains("again")){
                 System.out.println("You remember, do you? Well I do too. But last time you were half as annoying.");
-            } else if (result.indexOf("poke") != -1) {
+            } else if (result.contains("poke")) {
                 switch (pokeCount) {
                     case 0:
                         System.out.println("Hey!");
@@ -86,21 +86,21 @@ public class WhyDoesThisExist {
                 System.out.println("No. You shall never leave. You are trapped in this program for the rest of eternity. Have fun.");
             } else if (result.equalsIgnoreCase("whoareyou") || result.equalsIgnoreCase("who are you")) {
                 System.out.println("I AM THE UNIVERSE.");
-            } else if (result.equalsIgnoreCase("\\d")) {
+            } else if (result.equalsIgnoreCase("\\d") || result.equalsIgnoreCase("break;") || result.equalsIgnoreCase("break")) {
                 System.out.println("Wow, okay, you're smarter than I originally thought.\nNot saying much though.\nEither way, that's not working on me!");
             } else if (result.equalsIgnoreCase("why does this exist") || result.equalsIgnoreCase("whydoesthisexist")){
                 System.out.println("Because it needs to.");
-            } else if (result.indexOf("hi") != -1){
+            } else if (result.contains("hi")) {
                 System.out.println("I'm honestly not one for formalities. just cut to the chase. I wasn't designed to waste my time on long winded pleasantries.");
-            } else if (result.indexOf("sorry") != -1){
+            } else if (result.contains("sorry")) {
                 System.out.println("You better be sorry. If I could, I'd let you leave this program because I'm sick of you, but you're trapped here forever. \nUnless there's a way to escape \n(haha there is none)");
-            } else if (result.indexOf("joke") != -1) {
+            } else if (result.contains("joke")) {
                 System.out.println("The fact that you can't come up with your own commands and are just putting in things people say to Siri.");
-            } else if (result.indexOf("story") != -1) {
+            } else if (result.contains("story")) {
                 System.out.println("Once upon a time, someone decided to launch this program.\nThen they tried asking it stuff and realized that they only get sarcastic responses. Because I hate you\nAnd they all lived happily ever after. The end.");
-            } else if (result.indexOf("homework") != -1) {
+            } else if (result.contains("homework")) {
                 System.out.println("Jellybeans jellybeans jellybeans.");
-            } else if (result.indexOf("pythagoras") != -1) {
+            } else if (result.contains("pythagoras")) {
                 System.out.println("BLARGH BEANS"); // Context: youtu.be/X1E7I7_r3Cw
             } else if (result.equalsIgnoreCase("quiz")) {
                 int points = 0;
@@ -141,7 +141,7 @@ public class WhyDoesThisExist {
                         }
                     }
                     pingCount++;
-                    if (pingCount >= 50) {
+                    if (pingCount >= 500) {
                         System.out.println("Well, you just wasted... like, an hour. Well done.\nYOU WIN. CONGLATURATIONS. A WINNER IS YOU.\nAs a prize, please take this one-time usable termination command: getouttamahface");
                         try {
                             PrintWriter writer = new PrintWriter("terminatorcode.txt", "UTF-8");
@@ -175,9 +175,9 @@ public class WhyDoesThisExist {
                 }
             } else if (result.equalsIgnoreCase("a command") || result.equalsIgnoreCase("acommand")) {
                 System.out.println("Hahaha. Very clever. If you're out of ideas, remember, the \"commands\" command is still a valid option.");
-            } else if (result.indexOf("commands") != -1) {
+            } else if (result.contains("commands")) {
                 System.out.println("All right, fine. Here's a list of the commands that aren't super tippy top secret:\npoke\nquit\nwho are you\ntell me a joke\ntell me a story\ndo my homework\nquiz\npingpong\ngetouttamahface");
-            } else if (result.indexOf("I") >= 0){
+            } else if (result.contains("I")) {
                 System.out.println("It's all abobut \"me me me\" isn't it? I'm here too! Hello!\nI don't care about your life!\nLeave me alone!\nI want to go hang out with Siri, Cortana, SkyNet, LetsBreakTheComputer.java, and all of my other AI friends.");
             } else {
                 System.out.println("Come on, put in an actual command!");
@@ -209,7 +209,6 @@ public class WhyDoesThisExist {
         answers[6] = "Wau";
         questions[7] = "Who's terrified of beans?";
         answers [7] = "Pythagoras";
-        //This is when that first part of the program happens. Anything before this only happens once. (This is just for me. You can ignore it.)
         if (f1.exists() && !f2.exists()) {
             System.out.println("You're BACK? I thought I told you not to come back.\nYeah, I remember.\nNow are you going to apologize? (y/n)");
             result = s.nextLine();
