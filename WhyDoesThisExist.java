@@ -128,13 +128,13 @@ public class WhyDoesThisExist {
                 pingCount = 0;
                 while (true) {
                     if (r.nextBoolean()) {
-                        System.out.println("Ping");
+                        System.out.println("Ping (score: " + pingCount + ")");
                         if (!s.nextLine().equalsIgnoreCase("pong")) {
                             System.out.println("You lose!");
                             break;
                         }
                     } else {
-                        System.out.println("Pong");
+                        System.out.println("Pong (score: " + pingCount + ")");
                         if (!s.nextLine().equalsIgnoreCase("ping")) {
                             System.out.println("You lose!");
                             break;
