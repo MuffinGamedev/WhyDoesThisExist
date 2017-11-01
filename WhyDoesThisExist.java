@@ -100,6 +100,8 @@ public class WhyDoesThisExist {
                 System.out.println("Once upon a time, someone decided to launch this program.\nThen they tried asking it stuff and realized that they only get sarcastic responses. Because I hate you\nAnd they all lived happily ever after. The end.");
             } else if (result.contains("homework")) {
                 System.out.println("Jellybeans jellybeans jellybeans.");
+            } else if (result.equalsIgnoreCase("LetsBreakTheComputer.java")) {
+                System.out.println("youtu.be/aFZ7bBaYpcw");
             } else if (result.equalsIgnoreCase("FizzBuzz") {
                 for (int i = 1; i <= 100; i++) {
                     if (i % 3 == 0) System.out.print("Fizz");
