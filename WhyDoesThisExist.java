@@ -27,7 +27,6 @@ public class WhyDoesThisExist {
                 System.out.println("...what?");
             } else if (result.contains("sudo")) {
                 System.out.println("Haha sudo that's a funny joke.");
-                //I don't get it
             } else if (result.equalsIgnoreCase("no") || result.equalsIgnoreCase("")) {
                 System.out.println("I warned you not to do that.\nProceed? (y/n)");
                 result2 = s.nextLine();
@@ -121,7 +120,7 @@ public class WhyDoesThisExist {
             } else if (result.equalsIgnoreCase("why does this exist") || result.equalsIgnoreCase("whydoesthisexist")){
                 System.out.println("Because it needs to.");
             } else if (result.contains("game")) {
-               å System.out.println("I love games! we can play a quiz game, I can help you win scrabble, or I could sing for you!");
+                System.out.println("I love games! we can play a quiz game, I can help you win scrabble, or I could sing for you!");
             } else if (result.contains("hi")) {
                 System.out.println("I'm honestly not one for formalities. just cut to the chase. I wasn't designed to waste my time on long winded pleasantries.");
             } else if (result.contains("song") || result.contains("sing")){
