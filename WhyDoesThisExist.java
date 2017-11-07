@@ -23,7 +23,9 @@ public class WhyDoesThisExist {
             
             result = s.nextLine();
             
-            if (result.equalsIgnoreCase("sudoku")) {
+            if (result.equals(result.toUpperCase())) {
+                System.out.println(“Stop yelling!”);
+            } else if (result.equalsIgnoreCase("sudoku")) {
                 System.out.println("...what?");
             } else if (result.contains("sudo")) {
                 System.out.println("Haha sudo that's a funny joke.");
