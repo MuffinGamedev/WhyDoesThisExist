@@ -403,7 +403,7 @@ public class WhyDoesThisExist {
                 System.out.println("Yeah, that's what I thought. Get outta my program.");
             }
         } else {
-            System.out.println("Hello there! Welcome to this fantastic program! Your goal is to find as many ways as possible to escape. Right now, I count about 4.");
+            System.out.println("Hello there! Welcome to this fantastic program! Your goal is to find as many ways as possible to escape. Right now, I count about 6.");
             System.out.println("Please enter a command. Or else. And try to avoid punctuation because I probably won't recognize it.\nYou can find a list of some commands to try by typing in \"commands\".");
             loop();
         }
