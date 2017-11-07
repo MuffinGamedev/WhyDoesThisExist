@@ -8,7 +8,7 @@ public class WhyDoesThisExist {
     static Random r = new Random();
     static String result;
     static String result2;
-    static final int QUIZ_QUESTIONS = 9;
+    static final int QUIZ_QUESTIONS = 13;
     static String[] questions = new String[QUIZ_QUESTIONS];
     static String[] answers = new String[QUIZ_QUESTIONS];
     static File f1;
@@ -82,16 +82,59 @@ public class WhyDoesThisExist {
                         System.out.println("Command disabled.");
                 }
                 pokeCount++;
-            } else if (result.equalsIgnoreCase("close") || result.equalsIgnoreCase("quit") || result.equalsIgnoreCase("bye") || result.equalsIgnoreCase("go away") || result.equalsIgnoreCase("goaway") || result.equalsIgnoreCase("letmeoutofhere") || result.equalsIgnoreCase("let me out of here")) {
+            } else if (result.contains("close") || result.contains("quit") || result.contains("bye") || result.contains("go away") || result.contains("goaway") || result.contains("letmeoutofhere") || result.contains("let me out of here")) {
                 System.out.println("No. You shall never leave. You are trapped in this program for the rest of eternity. Have fun.");
             } else if (result.equalsIgnoreCase("whoareyou") || result.equalsIgnoreCase("who are you")) {
                 System.out.println("I AM THE UNIVERSE.");
+            } else if (result.equalsIgnoreCase("Anyways, let's continue")) {
+                System.out.println("Hey! That's my line! Look!");
+            } else if (result.contains("scrabble")){
+                Scanner scan = new Scanner (System.in);
+    String ans;
+    int sum = 0;
+    String alphabet = "abcdefghijklmnopqrstuvwxyz";
+    int [] points = {1, 3, 3, 2, 1, 4, 2, 2, 1, 8, 5, 1, 3, 1, 1, 3, 10, 1, 1, 1, 1, 4, 4, 8, 4, 10};
+    System.out.println ("Welcome to ScrabblePointReader 2.0!");
+    do{
+    System.out.println ("Please enter a Scrabble accepted word to determine its point value.");
+    String word = scan.nextLine().toLowerCase(); //this is where the user enters the word
+   sum = 0;
+    for (int i = 0; i < word.length(); i++) {
+      sum += points[alphabet.indexOf(word.substring(i,i+1))];
+    }
+    System.out.println ("That word is worth " + sum + " points!");
+    if (word.equalsIgnoreCase("hi"))
+      System.out.println ("That was terrible! what did you do, type \"hi\"?!?!");
+    else if (sum <= 12) 
+      System.out.println ("Okay, come on, you weren't even trying. Honestly, that was terrible.");
+   else if (13 <= sum && sum <= 35)
+     System.out.println ("Nice Scrabbling! That's not a bad word!");
+    else if (36 <= sum && sum <= 100)
+      System.out.println ("There is an 9999% chance that that word is not English. If it is, you're a hacker");
+    else 
+     System.out.println ("I said \"Scrabble accepted\", did I not? \n \nfreakin' idiot \n"); 
+    }// end of do
+    while (true);
             } else if (result.equalsIgnoreCase("\\d") || result.equalsIgnoreCase("break;") || result.equalsIgnoreCase("break")) {
                 System.out.println("Wow, okay, you're smarter than I originally thought.\nNot saying much though.\nEither way, that's not working on me!");
             } else if (result.equalsIgnoreCase("why does this exist") || result.equalsIgnoreCase("whydoesthisexist")){
                 System.out.println("Because it needs to.");
             } else if (result.contains("hi")) {
                 System.out.println("I'm honestly not one for formalities. just cut to the chase. I wasn't designed to waste my time on long winded pleasantries.");
+            } else if (result.contains("song") || result.contains("sing")){
+                Scanner scan = new Scanner (System.in);
+    System.out.println ("Do you want me to sing bottles of beer? (y/n) Quick reminder, I don't like jerks.");
+    String answer = scan.nextLine();
+    if (answer.equalsIgnoreCase ("y")){
+      System.out.println ("\n Ok, boss!\n");
+   int i = 100;
+    while (i>=1){
+    System.out.println (i+" bottles of beer on the wall \n "+ i-- +" Bottles of beer \n Take one down, pass it around, \n" + i + " bottles of beer on the wall");}
+    System.out.println ("Thanks for listening!");}
+    else if (answer.equalsIgnoreCase ("n")) {
+      System.out.println ("Oh. \n Ok, then. sorry to inconvinience you. \n I mean, really. Why'd you ask me to sing if you didn't want to hear me sing? \n Humans make no sense, I'm telling you. I think people like you can finally appreciate talent only to crush my dreams. \n \n Jerk. \n \n");}
+    else {
+    System.out.println ("Dude. There's two options. Pick one or the other. Don't try to be clever. \n Jerk");}
             } else if (result.contains("sorry")) {
                 System.out.println("You better be sorry. If I could, I'd let you leave this program because I'm sick of you, but you're trapped here forever. \nUnless there's a way to escape \n(haha there is none)");
             } else if (result.contains("joke")) {
@@ -100,10 +143,10 @@ public class WhyDoesThisExist {
                 System.out.println("Once upon a time, someone decided to launch this program.\nThen they tried asking it stuff and realized that they only get sarcastic responses. Because I hate you\nAnd they all lived happily ever after. The end.");
             } else if (result.contains("homework")) {
                 System.out.println("Jellybeans jellybeans jellybeans.");
-            } else if (result.equalsIgnoreCase("LetsBreakTheComputer.java")) {
+            } else if (result.contains("LetsBreakTheComputer.java")) {
                 System.out.println("youtu.be/aFZ7bBaYpcw");
-            } else if (result.equalsIgnoreCase("FizzBuzz") {
-                for (int i = 1; i <= 100; i++) {
+            } else if (result.contains("FizzBuzz")) {
+                for (int i = 1; i <= 1000; i++) {
                     if (i % 3 == 0) System.out.print("Fizz");
                     if (i % 5 == 0) System.out.print("Buzz");
                     if (i % 3 != 0 && i % 5 != 0) System.out.print(i);
@@ -150,7 +193,7 @@ public class WhyDoesThisExist {
                         }
                     }
                     pingCount++;
-                    if (pingCount >= 500) {
+                    if (pingCount >= 50) {
                         System.out.println("Well, you just wasted... like, an hour. Well done.\nYOU WIN. CONGLATURATIONS. A WINNER IS YOU.\nAs a prize, please take this one-time usable termination command: getouttamahface");
                         try {
                             PrintWriter writer = new PrintWriter("terminatorcode.txt", "UTF-8");
@@ -185,9 +228,9 @@ public class WhyDoesThisExist {
             } else if (result.equalsIgnoreCase("a command") || result.equalsIgnoreCase("acommand")) {
                 System.out.println("Hahaha. Very clever. If you're out of ideas, remember, the \"commands\" command is still a valid option.");
             } else if (result.contains("commands")) {
-                System.out.println("All right, fine. Here's a list of the commands that aren't super tippy top secret:\npoke\nquit\nwho are you\ntell me a joke\ntell me a story\ndo my homework\nquiz\npingpong\ngetouttamahface");
+                System.out.println("All right, fine. Here's a list of the commands that aren't super tippy top secret:\npoke\nquit\nwho are you\ntell me a joke\ntell me a story\ndo my homework\nquiz\npingpong\ngetouttamahface\nScrabble\nsing");
             } else if (result.contains("I")) {
-                System.out.println("It's all abobut \"me me me\" isn't it? I'm here too! Hello!\nI don't care about your life!\nLeave me alone!\nI want to go hang out with Siri, Cortana, SkyNet, LetsBreakTheComputer.java, and all of my other AI friends.");
+                System.out.println("It's all abobut \"me me me\" isn't it? I'm here too! Hello!\nI don't care about your life!\nLeave me alone!\nI want to go hang out with Siri, Cortana, GLaDOS SkyNet, LetsBreakTheComputer.java, and all of my other AI friends.");
             } else {
                 System.out.println("Come on, put in an actual command!");
             }
@@ -213,13 +256,21 @@ public class WhyDoesThisExist {
         questions[4] = "What is the command to shut down this program?";
         answers[4] =   "haha there is none";
         questions[5] = "What is the number one thing I hate?";
-        answers[5] = "Being poked";
+        answers[5] =   "Being poked";
         questions[6] = "What is the coolest number ever?";
-        answers[6] = "Wau";
+        answers[6] =   "Wau";
         questions[7] = "Who's terrified of beans?";
-        answers [7] = "Pythagoras";
+        answers [7] =  "Pythagoras";
         questions[8] = "What does Odysseus remind you of?";
-        answers[8] = "A dried onion";
+        answers[8] =   "A dried onion";
+        questions[9] = "Who coded this program?";
+        answers[9] =   "Some idiot";
+        questions[10] = "What is the air speed velocity of an unladen swallow?";
+        answers[10] =   "African or European swallow?";
+        questions[11] = "Is cereal a soup?";
+        answers[11] =   "YOU HAVE BEEN SILENCED BY DEMOCRACY!";
+        questions[12] = "How many sandwiches are 50 slices of bread?";
+        answers[12] =   "I don't care. What are you doing with that bread?!";
         
         if (f1.exists() && !f2.exists()) {
             System.out.println("You're BACK? I thought I told you not to come back.\nYeah, I remember.\nNow are you going to apologize? (y/n)");
