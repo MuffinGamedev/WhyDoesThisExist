@@ -82,7 +82,7 @@ public class WhyDoesThisExist {
                         System.out.println("Command disabled.");
                 }
                 pokeCount++;
-            } else if (result.contains("close") || result.contains("quit") || result.contains("bye") || result.contains("go away") || result.contains("goaway") || result.contains("letmeoutofhere") || result.contains("let me out of here"))|| result.contains("escape") {
+            } else if (result.contains("close") || result.contains("quit") || result.contains("bye") || result.contains("go away") || result.contains("goaway") || result.contains("letmeoutofhere") || result.contains("let me out of here") || result.contains("escape")) {
                 System.out.println("No. You shall never leave. You are trapped in this program for the rest of eternity. Have fun.");
             } else if (result.equalsIgnoreCase("whoareyou") || result.equalsIgnoreCase("who are you")) {
                 System.out.println("I AM THE UNIVERSE.");
