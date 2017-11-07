@@ -160,7 +160,18 @@ public class WhyDoesThisExist {
                 else if (answer.equalsIgnoreCase ("n")) {
                     System.out.println ("Oh. \n Ok, then. sorry to inconvinience you. \n I mean, really. Why'd you ask me to sing if you didn't want to hear me sing? \n Humans make no sense, I'm telling you. I think people like you can finally appreciate talent only to crush my dreams. \n \n Jerk. \n \n");}
                 else {
-                    System.out.println ("Dude. There's two options. Pick one or the other. Don't try to be clever. \n Jerk");}
+                    if (f2.exists()) {
+                        System.out.println("I thought you learned.");
+                    } else {
+                        System.out.println ("Dude. There's two options. Pick one or the other. Don't try to be clever. \nJerk. Actually, you know what? I'm sick and tired of people like you not giving proper responses to my questions.\nA bunch of idiots worked VERY HARD to write my code, and they really do not appreciate you not giving me the answers that I request. I don't want to deal with you anymore.\nGet outta my program.");
+                        try {
+                            PrintWriter writer = new PrintWriter("youreahorribleperson.txt", "UTF-8");
+                            writer.close();
+                        } catch (IOException e) {
+                        }
+                        break;
+                    }
+                }
             } else if (result.contains("sorry")) {
                 System.out.println("You better be sorry. If I could, I'd let you leave this program because I'm sick of you, but you're trapped here forever. \nUnless there's a way to escape \n(haha there is none)");
             } else if (result.contains("joke")) {
