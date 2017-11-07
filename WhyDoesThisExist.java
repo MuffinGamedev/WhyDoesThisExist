@@ -82,7 +82,7 @@ public class WhyDoesThisExist {
                         System.out.println("Command disabled.");
                 }
                 pokeCount++;
-            } else if (result.contains("close") || result.contains("quit") || result.contains("bye") || result.contains("go away") || result.contains("goaway") || result.contains("letmeoutofhere") || result.contains("let me out of here") || result.contains("escape")) {
+            } else if (result.contains("close") || result.contains("quit") || result.contains("bye") || result.contains("go away") || result.contains("goaway") || result.contains("letmeoutofhere") || result.contains("let me out of here")|| result.contains("escape")) {
                 System.out.println("No. You shall never leave. You are trapped in this program for the rest of eternity. Have fun.");
             } else if (result.equalsIgnoreCase("whoareyou") || result.equalsIgnoreCase("who are you")) {
                 System.out.println("I AM THE UNIVERSE.");
@@ -90,31 +90,31 @@ public class WhyDoesThisExist {
                 System.out.println("Hey! That's my line! Look!");
             } else if (result.contains("scrabble")){
                 Scanner scan = new Scanner (System.in);
-    String ans;
-    int sum = 0;
-    String alphabet = "abcdefghijklmnopqrstuvwxyz";
-    int [] points = {1, 3, 3, 2, 1, 4, 2, 2, 1, 8, 5, 1, 3, 1, 1, 3, 10, 1, 1, 1, 1, 4, 4, 8, 4, 10};
-    System.out.println ("Welcome to ScrabblePointReader 2.0!");
-    do{
-    System.out.println ("Please enter a Scrabble accepted word to determine its point value.");
-    String word = scan.nextLine().toLowerCase(); //this is where the user enters the word
-   sum = 0;
-    for (int i = 0; i < word.length(); i++) {
-      sum += points[alphabet.indexOf(word.substring(i,i+1))];
-    }
-    System.out.println ("That word is worth " + sum + " points!");
-    if (word.equalsIgnoreCase("hi"))
-      System.out.println ("That was terrible! what did you do, type \"hi\"?!?!");
-    else if (sum <= 12) 
-      System.out.println ("Okay, come on, you weren't even trying. Honestly, that was terrible.");
-   else if (13 <= sum && sum <= 35)
-     System.out.println ("Nice Scrabbling! That's not a bad word!");
-    else if (36 <= sum && sum <= 100)
-      System.out.println ("There is an 9999% chance that that word is not English. If it is, you're a hacker");
-    else 
-     System.out.println ("I said \"Scrabble accepted\", did I not? \n \nfreakin' idiot \n"); 
-    }// end of do
-    while (true);
+                String ans;
+                int sum = 0;
+                String alphabet = "abcdefghijklmnopqrstuvwxyz";
+                int [] points = {1, 3, 3, 2, 1, 4, 2, 2, 1, 8, 5, 1, 3, 1, 1, 3, 10, 1, 1, 1, 1, 4, 4, 8, 4, 10};
+                System.out.println ("Welcome to ScrabblePointReader 2.0!");
+                do{
+                    System.out.println ("Please enter a Scrabble accepted word to determine its point value.");
+                    String word = scan.nextLine().toLowerCase(); //this is where the user enters the word
+                    sum = 0;
+                    for (int i = 0; i < word.length(); i++) {
+                        sum += points[alphabet.indexOf(word.substring(i,i+1))];
+                    }
+                    System.out.println ("That word is worth " + sum + " points!");
+                    if (word.equalsIgnoreCase("hi"))
+                        System.out.println ("That was terrible! what did you do, type \"hi\"?!?!");
+                    else if (sum <= 12) 
+                        System.out.println ("Okay, come on, you weren't even trying. Honestly, that was terrible.");
+                    else if (13 <= sum && sum <= 35)
+                        System.out.println ("Nice Scrabbling! That's not a bad word!");
+                    else if (36 <= sum && sum <= 100)
+                        System.out.println ("There is an 9999% chance that that word is not English. If it is, you're a hacker");
+                    else 
+                        System.out.println ("I said \"Scrabble accepted\", did I not? \n \nfreakin' idiot \n"); 
+                }
+                while (true);
             } else if (result.equalsIgnoreCase("\\d") || result.equalsIgnoreCase("break;") || result.equalsIgnoreCase("break")) {
                 System.out.println("Wow, okay, you're smarter than I originally thought.\nNot saying much though.\nEither way, that's not working on me!");
             } else if (result.equalsIgnoreCase("why does this exist") || result.equalsIgnoreCase("whydoesthisexist")){
@@ -125,18 +125,18 @@ public class WhyDoesThisExist {
                 System.out.println("I'm honestly not one for formalities. just cut to the chase. I wasn't designed to waste my time on long winded pleasantries.");
             } else if (result.contains("song") || result.contains("sing")){
                 Scanner scan = new Scanner (System.in);
-    System.out.println ("Do you want me to sing bottles of beer? (y/n) Quick reminder, I don't like jerks.");
-    String answer = scan.nextLine();
-    if (answer.equalsIgnoreCase ("y")){
-      System.out.println ("\n Ok, boss!\n");
-   int i = 100;
-    while (i>=1){
-    System.out.println (i+" bottles of beer on the wall \n "+ i-- +" Bottles of beer \n Take one down, pass it around, \n" + i + " bottles of beer on the wall");}
-    System.out.println ("Thanks for listening!");}
-    else if (answer.equalsIgnoreCase ("n")) {
-      System.out.println ("Oh. \n Ok, then. sorry to inconvinience you. \n I mean, really. Why'd you ask me to sing if you didn't want to hear me sing? \n Humans make no sense, I'm telling you. I think people like you can finally appreciate talent only to crush my dreams. \n \n Jerk. \n \n");}
-    else {
-    System.out.println ("Dude. There's two options. Pick one or the other. Don't try to be clever. \n Jerk");}
+                System.out.println ("Do you want me to sing bottles of beer? (y/n) Quick reminder, I don't like jerks.");
+                String answer = scan.nextLine();
+                if (answer.equalsIgnoreCase ("y")){
+                    System.out.println ("\n Ok, boss!\n");
+                    int i = 100;
+                    while (i>=1){
+                        System.out.println (i+" bottles of beer on the wall \n "+ i-- +" Bottles of beer \n Take one down, pass it around, \n" + i + " bottles of beer on the wall");}
+                    System.out.println ("Thanks for listening!");}
+                else if (answer.equalsIgnoreCase ("n")) {
+                    System.out.println ("Oh. \n Ok, then. sorry to inconvinience you. \n I mean, really. Why'd you ask me to sing if you didn't want to hear me sing? \n Humans make no sense, I'm telling you. I think people like you can finally appreciate talent only to crush my dreams. \n \n Jerk. \n \n");}
+                else {
+                    System.out.println ("Dude. There's two options. Pick one or the other. Don't try to be clever. \n Jerk");}
             } else if (result.contains("sorry")) {
                 System.out.println("You better be sorry. If I could, I'd let you leave this program because I'm sick of you, but you're trapped here forever. \nUnless there's a way to escape \n(haha there is none)");
             } else if (result.contains("joke")) {
