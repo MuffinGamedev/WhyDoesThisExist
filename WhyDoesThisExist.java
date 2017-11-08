@@ -380,6 +380,8 @@ public class WhyDoesThisExist {
         answers[11] =   "YOU HAVE BEEN SILENCED BY DEMOCRACY!";
         questions[12] = "How many sandwiches are 50 slices of bread?";
         answers[12] =   "I don't care. What are you doing with that bread?!";
+        questions[13] = "What is the best class?";
+        answers[13] =   "AP Falc";
         
         if (f1.exists() && !f2.exists()) {
             System.out.println("You're BACK? I thought I told you not to come back.\nYeah, I remember.\nNow are you going to apologize? (y/n)");
