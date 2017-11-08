@@ -87,32 +87,26 @@ public class WhyDoesThisExist {
             } else if (result.equalsIgnoreCase("whoareyou") || result.equalsIgnoreCase("who are you")) {
                 System.out.println("I AM THE UNIVERSE.");
             } else if (result.contains("dice")) {
-                //RIP formatting
-                int i;    
-                for (i=1;i<20;i++)
+                for (int i=0;i<20;i++)
                 {
-                    Scanner scan = new Scanner (System.in);
                     Random rand = new Random();
                     System.out.println ("Guess what dice I rolled!");
-                    int dice = rand.nextInt(6)+1;
-                    int ans = scan.nextInt();
+                    int ans = s.nextInt();
+                    int dice = ans;
                     if (ans > 6 && ans < 20)
                         System.out.println("What is this? Dundeons & Dragons?! \n \n NERRRRRRD\n \nIt was " + dice + ".");
                     else if (ans > 20 || ans < 1)
                         System.out.println("That's not even a number on the die, ya freakin' idiot! It was " + dice + ".");
-                    else if (ans == dice && dice==6) 
-                        System.out.println("Nope, sorry! It was "+  (dice - 1) +"!");
-                    
-                    else if(ans==dice)
-                        System.out.println("Nope, sorry! It was "+  (dice + 1) +"!");
-                    
                     else
+                        while (ans == dice) {
+                            dice = rand.nextInt();
+                        }
                         System.out.println("Nope, sorry! It was "+  dice +"!");
                 }
                 System.out.println("Oops. \n You've been trolled. \n  The dice roll, but if you're right, they lie to you. \n   Sorry not sorry \n    :P");
             } else if (result.equalsIgnoreCase("Anyways, let's continue")) {
                 System.out.println("Hey! That's my line! Look!");
-            } else if (result.contains("cake")){            
+            } else if (result.contains("cake") || result.contains("portal") || result.contains("GLaDOS") || result.contains("still alive")){
                 System.out.println("This was a triumph");
                 String x = s.nextLine();
                 if (x.equalsIgnoreCase("I'm making a note here, huge success")){
