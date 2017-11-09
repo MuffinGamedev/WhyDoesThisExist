@@ -107,19 +107,19 @@ public class WhyDoesThisExist {
             } else if (result.equalsIgnoreCase("Anyways, let's continue")) {
                 System.out.println("Hey! That's my line! Look!");
             } else if (result.contains("cake") || result.contains("portal") || result.contains("GLaDOS") || result.contains("still alive")){
-                System.out.println("This was a triumph");
+                System.out.println("This was a triumph (remember, no punctuation)");
                 String x = s.nextLine();
                 if (x.equalsIgnoreCase("I'm making a note here, huge success")){
                   System.out.println("It's hard to overstate my satisfaction");
                   x = s.nextLine();
-                  if (x.equalsIgnoreCase("Aperature Science")){
+                  if (x.equalsIgnoreCase("Aperture Science")){
                     System.out.println("We do what we must because we can");
                     x = s.nextLine();
                     if (x.equalsIgnoreCase("For the good of all of us - except the ones who are dead")){
                       System.out.println("But there's no sense crying over every mistake");
                       x = s.nextLine();
                       if (x.equalsIgnoreCase("You just keep on trying 'till you run out of cake")){
-                        System.out.println("And the science get's done and you make a neat gun for the people who are still alive");
+                        System.out.println("And the science gets done and you make a neat gun for the people who are still alive");
                         x = s.nextLine();
                         if (x.equalsIgnoreCase("*Instrumental break*")){
                           System.out.println("I'm not even angry");
@@ -131,10 +131,10 @@ public class WhyDoesThisExist {
                              System.out.println("And threw every piece into a fire");
                              x = s.nextLine();
                              if (x.equalsIgnoreCase("As they burned, it hurt because I was so happy for you")){
-                               System.out.println("Now these points of data make a beatiful line");
+                               System.out.println("Now these points of data make a beautiful line");
                                x = s.nextLine();
-                               if (x.equalsIgnoreCase("And we're out of beta we're releasing on time")){
-                                 System.out.println("So I’m GLaD I got burned, think of all the things we learned");
+                               if (x.equalsIgnoreCase("And we're out of beta, we're releasing on time")){
+                                 System.out.println("So I’m GLaD I got burned think of all the things we learned");
                                  x = s.nextLine();
                                  if (x.equalsIgnoreCase("For the people who are still alive")){
                                    System.out.println("*Instrumental break*");
@@ -146,12 +146,12 @@ public class WhyDoesThisExist {
                                        System.out.println("Maybe Black Mesa");
                                        x = s.nextLine();
                                        if (x.equalsIgnoreCase("That was a joke, haha, FAT CHANCE")){
-                                         System.out.println("Anyway, this cake is great, it's so delicious and moist");
+                                         System.out.println("Anyway this cake is great it's so delicious and moist");
                                          x = s.nextLine();
                                          if (x.equalsIgnoreCase("Look at me still talking when there's science to do")){
-                                           System.out.println("And one look up there makes me GLaD I'm not you");
+                                           System.out.println("When I look out there it makes me GLaD I'm not you");
                                            x = s.nextLine();
-                                           if (x.equalsIgnoreCase("I've experiments to run, there is research to be done, one the people who are still alive")){
+                                           if (x.equalsIgnoreCase("I've experiments to run, there is research to be done, on the people who are still alive")){
                                              System.out.println("And believe me I am still alive");
                                              x = s.nextLine();
                                              if (x.equalsIgnoreCase("I'm doing science and I'm still alive")){
@@ -161,7 +161,7 @@ public class WhyDoesThisExist {
                                                  System.out.println("And when you're dead I will be still alive");
                                                  x = s.nextLine();
                                                  if (x.equalsIgnoreCase("Still alive")){
-                                                   System.out.println("STILL ALIVE");
+                                                   System.out.println("still alive.");
                                                    System.out.println("oh my gosh, you made me so happy... I think I'm going to cry. I'm sorry for anything mean I ever said or did to you. \nyou're free to go\n you have my gratitude");
                                                    break;
                                                  }
