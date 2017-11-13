@@ -8,7 +8,7 @@ public class WhyDoesThisExist {
     static Random r = new Random();
     static String result;
     static String result2;
-    static final int QUIZ_QUESTIONS = 13;
+    static final int QUIZ_QUESTIONS = 14;
     static String[] questions = new String[QUIZ_QUESTIONS];
     static String[] answers = new String[QUIZ_QUESTIONS];
     static File f1;
@@ -382,6 +382,8 @@ public class WhyDoesThisExist {
         answers[12] =   "I don't care. What are you doing with that bread?!";
         questions[13] = "What is the best class?";
         answers[13] =   "AP Falc";
+        questions[14] = "What is the best field of science?";
+        answers[14] =   "Neuroscientific Geology";
         
         if (f1.exists() && !f2.exists()) {
             System.out.println("You're BACK? I thought I told you not to come back.\nYeah, I remember.\nNow are you going to apologize? (y/n)");
