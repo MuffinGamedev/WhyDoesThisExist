@@ -21,7 +21,7 @@ public class WhyDoesThisExist {
         while (true) {
             System.out.println("Anyways, let's continue.");
             
-            result = s.nextLine();
+            result = s.nextLine().trim();
             
             if (result.equalsIgnoreCase("sudoku")) {
                 System.out.println("...what?");
