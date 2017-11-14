@@ -238,7 +238,7 @@ public class WhyDoesThisExist {
                 s.nextLine();
                 System.out.println("It's a virus.");
                 s.nextLine();
-                System.out.println("Glad I was able to help!");
+                System.out.println("GLaD I was able to help!");
             } else if (result.contains("game")) {
                 System.out.println("I love games! we can play a quiz game, I can help you win scrabble, I also have a very fun dice game we can play!");
             } else if (result.contains("hi")) {
