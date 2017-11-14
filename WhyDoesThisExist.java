@@ -8,7 +8,7 @@ public class WhyDoesThisExist {
     static Random r = new Random();
     static String result;
     static String result2;
-    static final int QUIZ_QUESTIONS = 14;
+    static final int QUIZ_QUESTIONS = 15;
     static String[] questions = new String[QUIZ_QUESTIONS];
     static String[] answers = new String[QUIZ_QUESTIONS];
     static File f1;
