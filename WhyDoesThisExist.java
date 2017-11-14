@@ -94,12 +94,12 @@ public class WhyDoesThisExist {
                     int ans = s.nextInt();
                     int dice = ans;
                     if (ans > 6 && ans < 20)
-                        System.out.println("What is this? Dundeons & Dragons?! \n \n NERRRRRRD\n \nIt was " + dice + ".");
+                        System.out.println("What is this? Dungeons & Dragons?! \n \n NERRRRRRD\n \nIt was " + dice + ".");
                     else if (ans > 20 || ans < 1)
                         System.out.println("That's not even a number on the die, ya freakin' idiot! It was " + dice + ".");
                     else
                         while (ans == dice) {
-                            dice = rand.nextInt();
+                            dice = rand.nextInt(6) + 1;
                         }
                         System.out.println("Nope, sorry! It was "+  dice +"!");
                 }
