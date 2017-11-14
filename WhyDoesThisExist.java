@@ -215,6 +215,30 @@ public class WhyDoesThisExist {
                 System.out.println("Wow, okay, you're smarter than I originally thought.\nNot saying much though.\nEither way, that's not working on me!");
             } else if (result.equalsIgnoreCase("why does this exist") || result.equalsIgnoreCase("whydoesthisexist")){
                 System.out.println("Because it needs to.");
+            } else if (result.contains("help") || result.contains("virus") || result.contains("support")) {
+                System.out.println("Hello, this is the support office. How may I assist you today?");
+                s.nextLine();
+                System.out.println("Oh, you have a virus! Let me assist you.");
+                s.nextLine();
+                System.out.println("I see, I see! Well, have you tried turning it off and back on again?");
+                s.nextLine();
+                System.out.println("I'm sorry, but I cannot assist you until you have tried turning it off and back on again.");
+                s.nextLine();
+                System.out.println("Well... have you tried duct tape? That always works.");
+                s.nextLine();
+                System.out.println("What about duck tape? Have you tried that?");
+                s.nextLine();
+                System.out.println("Well, there's not much else I can tell you.");
+                s.nextLine();
+                System.out.println("Well, you have a virus.");
+                s.nextLine();
+                System.out.println("It's a hacking virus.");
+                s.nextLine();
+                System.out.println("It attacks you by hacking.");
+                s.nextLine();
+                System.out.println("It's a virus.");
+                s.nextLine();
+                System.out.println("Glad I was able to help!");
             } else if (result.contains("game")) {
                 System.out.println("I love games! we can play a quiz game, I can help you win scrabble, I also have a very fun dice game we can play!");
             } else if (result.contains("hi")) {
