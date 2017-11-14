@@ -93,14 +93,14 @@ public class WhyDoesThisExist {
                     System.out.println ("Guess what dice I rolled!");
                     int ans = s.nextInt();
                     int dice = ans;
+                    while (ans == dice) {
+                        dice = rand.nextInt(6) + 1;
+                    }
                     if (ans > 6 && ans < 20)
                         System.out.println("What is this? Dungeons & Dragons?! \n \n NERRRRRRD\n \nIt was " + dice + ".");
                     else if (ans > 20 || ans < 1)
                         System.out.println("That's not even a number on the die, ya freakin' idiot! It was " + dice + ".");
                     else
-                        while (ans == dice) {
-                            dice = rand.nextInt(6) + 1;
-                        }
                         System.out.println("Nope, sorry! It was "+  dice +"!");
                 }
                 System.out.println("Oops. \n You've been trolled. \n  The dice roll, but if you're right, they lie to you. \n   Sorry not sorry \n    :P");
