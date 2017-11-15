@@ -17,6 +17,7 @@ public class WhyDoesThisExist {
     static File f3;
     static int pokeCount;
     static int pingCount;
+    static boolean allowLocation = false;
     
     static void loop () {
         while (true) {
@@ -48,6 +49,21 @@ public class WhyDoesThisExist {
                         break;
                     }
                 }
+            } else if (result.contains("false sense of security")) {
+                System.out.println("Error: java.util.FalseSenseOfSecurity has already been imported.");
+            } else if (result.contains("hello") || result.equalsIgnoreCase("hi") || result.equalsIgnoreCase("hi there")) {
+                System.out.println("Nice to meet you.");
+            } else if (result.contains("nice to meet you")) {
+                System.out.println("This is boring you, isn't it? You could always type \"commands\" for something a bit more interesting.");
+            } else if (result.contains("weather")) {
+                System.out.println("I don't know what the weather is like. But I can find out if you let me know where you are...\nAllow WhyDoesThisExist.java to access your current location? (y/n)");
+                result = s.nextLine();
+                if (result.equalsIgnoreCase("y")) {
+                    System.out.println("Thanks, but no thanks.\nI just don't feel like looking up the weather for you.\nThat's Google's job, not mine.");
+                    allowLocation = true;
+                }
+                else if (result.equalsIgnoreCase("n")) System.out.println("Why would you not want to give your location information to me?\nHmm? What could be the reason?\n...\n...\nTELLMEWHEREYOULIVE\n...\n...\n...");
+                else System.out.println("Jerk. Put in y or n next time. I mean, it's just the weather so I'm not that mad about it, but still.");
             } else if (result.equalsIgnoreCase("poke of death") || result.equalsIgnoreCase("pokeofdeath") || result.equalsIgnoreCase("poke 59458,62") || result.equalsIgnoreCase("poke 5945862")) {
                 System.out.println("NOOOOOOOOOOOOO!");
                 break;
@@ -241,13 +257,10 @@ public class WhyDoesThisExist {
                 s.nextLine();
                 System.out.println("GLaD I was able to help!");
             } else if (result.contains("game")) {
-                System.out.println("I love games! we can play a quiz game, I can help you win scrabble, I also have a very fun dice game we can play!");
-            } else if (result.contains("hi")) {
-                System.out.println("I'm honestly not one for formalities. just cut to the chase. I wasn't designed to waste my time on long winded pleasantries.");
+                System.out.println("I love games! We can play a quiz game, I can help you win scrabble, I also have a very fun dice game we can play!");
             } else if (result.contains("song") || result.contains("sing")){
-                Scanner scan = new Scanner (System.in);
                 System.out.println ("Do you want me to sing bottles of beer? (y/n) Quick reminder, I don't like jerks.");
-                String answer = scan.nextLine();
+                String answer = s.nextLine();
                 if (answer.equalsIgnoreCase ("y")){
                     System.out.println ("\n Ok, boss!\n");
                     int i = 100;
@@ -308,8 +321,6 @@ public class WhyDoesThisExist {
             } else if (result.equalsIgnoreCase("haha there is none") || result.equalsIgnoreCase("hahathereisnone")) {
                 System.out.println("What, you actually thought that would work? That's not a valid terminating command! You fool! You're trapped here forev-");
                 break;
-            } else if (result.equalsIgnoreCase("please") || result.equalsIgnoreCase("yes")) {
-                System.out.println("Whoever programmed this was too lazy to make me able to follow a conversation. I assume that's what you're trying to do. So go away.");
             } else if (result.equalsIgnoreCase("pingpong") || result.equalsIgnoreCase("ping pong") || result.equalsIgnoreCase("ping") || result.equalsIgnoreCase("pong")) {
                 pingCount = 0;
                 while (true) {
