@@ -64,6 +64,10 @@ public class WhyDoesThisExist {
                 }
                 else if (result.equalsIgnoreCase("n")) System.out.println("Why would you not want to give your location information to me?\nHmm? What could be the reason?\n...\n...\nTELLMEWHEREYOULIVE\n...\n...\n...");
                 else System.out.println("Jerk. Put in y or n next time. I mean, it's just the weather so I'm not that mad about it, but still.");
+            } else if (result.contains("dog") || result.contains("cat") || result.contains("pet") || result.contains("fish") || result.contains("hamster") || result.contains("guinea pig") || result.contains("animal")) {
+                System.out.println("Tell me more about your family.");
+            } else if (result.contains("mother") || result.contains("mom") || result.contains("father") || result.contains("dad") || result.contains("brother") || result.contains("sister") || result.contains("parent") || result.contains("family")) {
+                System.out.println("Tell me more about your pets.");
             } else if (result.equalsIgnoreCase("poke of death") || result.equalsIgnoreCase("pokeofdeath") || result.equalsIgnoreCase("poke 59458,62") || result.equalsIgnoreCase("poke 5945862")) {
                 System.out.println("NOOOOOOOOOOOOO!");
                 break;
