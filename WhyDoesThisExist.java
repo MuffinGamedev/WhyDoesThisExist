@@ -130,62 +130,59 @@ public class WhyDoesThisExist {
             } else if (result.contains("cake") || result.contains("portal") || result.contains("GLaDOS") || result.contains("still alive")){
                 System.out.println("This was a triumph (remember, no punctuation)");
                 String x = s.nextLine();
-                if (x.equalsIgnoreCase("I'm making a note here, huge success")){
+                if (x.equalsIgnoreCase("I'm making a note here HUGE SUCCESS")){
                   System.out.println("It's hard to overstate my satisfaction");
                   x = s.nextLine();
                   if (x.equalsIgnoreCase("Aperture Science")){
                     System.out.println("We do what we must because we can");
                     x = s.nextLine();
-                    if (x.equalsIgnoreCase("For the good of all of us - except the ones who are dead")){
+                    if (x.equalsIgnoreCase("For the good of all of us except the ones who are dead")){
                       System.out.println("But there's no sense crying over every mistake");
                       x = s.nextLine();
-                      if (x.equalsIgnoreCase("You just keep on trying 'till you run out of cake")){
-                        System.out.println("And the science gets done and you make a neat gun for the people who are still alive");
+                      if (x.equalsIgnoreCase("You just keep on trying till you run out of cake")){
+                        System.out.println("And the science gets done and you make a neat gun for the people who are still alive\n*Instrumental break*");
                         x = s.nextLine();
-                        if (x.equalsIgnoreCase("*Instrumental break*")){
-                          System.out.println("I'm not even angry");
+                        if (x.equalsIgnoreCase("I'm not even angry")){
+                          System.out.println("I'm being so sincere right now");
                           x = s.nextLine();
-                          if (x.equalsIgnoreCase("I'm being so sincere right now")){
-                           System.out.println("Even though you broke my heart and killed me");
+                          if (x.equalsIgnoreCase("Even though you broke my heart and killed me")){
+                           System.out.println("And tore me to pieces");
                            x = s.nextLine();
-                           if (x.equalsIgnoreCase("And tore me to pieces")){
-                             System.out.println("And threw every piece into a fire");
+                           if (x.equalsIgnoreCase("And threw every piece into a fire")){
+                             System.out.println("As they burned, it hurt because I was so happy for you");
                              x = s.nextLine();
-                             if (x.equalsIgnoreCase("As they burned, it hurt because I was so happy for you")){
-                               System.out.println("Now these points of data make a beautiful line");
+                             if (x.equalsIgnoreCase("Now these points of data make a beautiful line")){
+                               System.out.println("And we're out of beta, we're releasing on time\nSo I’m GLaD I got burned think of all the things we learned");
                                x = s.nextLine();
-                               if (x.equalsIgnoreCase("And we're out of beta, we're releasing on time")){
-                                 System.out.println("So I’m GLaD I got burned think of all the things we learned");
+                               if (x.equalsIgnoreCase("For the people who are still alive")){
+                                 System.out.println("*Instrumental break*");
                                  x = s.nextLine();
-                                 if (x.equalsIgnoreCase("For the people who are still alive")){
-                                   System.out.println("*Instrumental break*");
+                                 if (x.equalsIgnoreCase("Go ahead and leave me")){
+                                   System.out.println("I think I prefer to stay inside");
                                    x = s.nextLine();
-                                   if (x.equalsIgnoreCase("Go ahead and leave me")){
-                                     System.out.println("I think I prefer to stay inside");
+                                   if (x.equalsIgnoreCase("Maybe you'll find someone else to help you")){
+                                     System.out.println("Maybe Black Mesa");
                                      x = s.nextLine();
-                                     if (x.equalsIgnoreCase("Maybe you'll find someone else to help you")){
-                                       System.out.println("Maybe Black Mesa");
+                                     if (x.equalsIgnoreCase("That was a joke haha FAT CHANCE")){
+                                       System.out.println("Anyway, this cake is great, it's so delicious and moist");
                                        x = s.nextLine();
-                                       if (x.equalsIgnoreCase("That was a joke, haha, FAT CHANCE")){
-                                         System.out.println("Anyway this cake is great it's so delicious and moist");
+                                       if (x.equalsIgnoreCase("Look at me still talking when there's science to do")){
+                                         System.out.println("When I look out there it makes me GLaD I'm not you");
                                          x = s.nextLine();
-                                         if (x.equalsIgnoreCase("Look at me still talking when there's science to do")){
-                                           System.out.println("When I look out there it makes me GLaD I'm not you");
+                                         if (x.equalsIgnoreCase("I've experiments to run there is research to be done on the people who are still alive")){
+                                           System.out.println("And believe me I am still alive");
                                            x = s.nextLine();
-                                           if (x.equalsIgnoreCase("I've experiments to run, there is research to be done, on the people who are still alive")){
-                                             System.out.println("And believe me I am still alive");
+                                           if (x.equalsIgnoreCase("I'm doing science and I'm still alive")){
+                                             System.out.println("I feel FANTASTIC and I'm still alive");
                                              x = s.nextLine();
-                                             if (x.equalsIgnoreCase("I'm doing science and I'm still alive")){
-                                               System.out.println("I feel FANTASTIC and I'm still alive");
+                                             if (x.equalsIgnoreCase("While you're dying Ill be still alive")){
+                                               System.out.println("And when you're dead I will be still alive");
                                                x = s.nextLine();
-                                               if (x.equalsIgnoreCase("While you're dying I'll be still alive")){
-                                                 System.out.println("And when you're dead I will be still alive");
+                                               if (x.equalsIgnoreCase("Still alive")){
+                                                 System.out.println("still alive.");
                                                  x = s.nextLine();
-                                                 if (x.equalsIgnoreCase("Still alive")){
-                                                   System.out.println("still alive.");
-                                                   System.out.println("oh my gosh, you made me so happy... I think I'm going to cry. I'm sorry for anything mean I ever said or did to you. \nyou're free to go\n you have my gratitude");
-                                                   break;
-                                                 }
+                                                 System.out.println("oh my gosh, you made me so happy... I think I'm going to cry. I'm sorry for anything mean I ever said or did to you. \nyou're free to go\n you have my gratitude");
+                                                 break;
                                                }
                                              }
                                            }
