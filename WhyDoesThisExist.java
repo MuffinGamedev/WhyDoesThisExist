@@ -387,9 +387,25 @@ public class WhyDoesThisExist {
             } else if (result.equalsIgnoreCase("a command") || result.equalsIgnoreCase("acommand")) {
                 System.out.println("Hahaha. Very clever. If you're out of ideas, remember, the \"commands\" command is still a valid option.");
             } else if (result.contains("commands")) {
-                System.out.println("All right, fine. Here's a list of the commands that aren't super tippy top secret:\npoke\nquit\nwho are you\ntell me a joke\ntell me a story\ndo my homework\nquiz\npingpong\ngetouttamahface\nScrabble\nsing");
-            } else if (result.contains("I")) {
-                System.out.println("It's all abobut \"me me me\" isn't it? I'm here too! Hello!\nI don't care about your life!\nLeave me alone!\nI want to go hang out with Siri, Cortana, GLaDOS SkyNet, LetsBreakTheComputer.java, and all of my other AI friends.");
+                System.out.println("All right, fine. Here's a list of the commands that aren't super tippy top secret:");
+                System.out.println("hello");
+                System.out.println("nice to meet you");
+                System.out.println("hi friend");
+                System.out.println("how is the weather?");
+                System.out.println("bye");
+                System.out.println("false sense of security");
+                System.out.println("who are you");
+                System.out.println("dice");
+                System.out.println("still alive");
+                System.out.println("scrabble");
+                System.out.println("tech support");
+                System.out.println("sing");
+                System.out.println("joke");
+                System.out.println("story");
+                System.out.println("fizzbuzz");
+                System.out.println("quiz");
+                System.out.println("pingpong");
+                System.out.println("getouttamahface");
             } else {
                 System.out.println("Come on, put in an actual command!");
             }
@@ -457,8 +473,8 @@ public class WhyDoesThisExist {
                 System.out.println("Yeah, that's what I thought. Get outta my program.");
             }
         } else {
-            System.out.println("Hello there! Welcome to this fantastic program! Your goal is to find as many ways as possible to escape. Right now, I count about 6.");
-            System.out.println("Please enter a command. Or else. And try to avoid punctuation because I probably won't recognize it.\nYou can find a list of some commands to try by typing in \"commands\".");
+            System.out.println("Hello there! Welcome to this fantastic program!");
+            System.out.println("Please enter a command. And try to avoid punctuation because I probably won't recognize it.\nYou can find a list of some commands to try by typing in \"commands\".");
             loop();
         }
         System.out.println("Program terminated.");
