@@ -9,7 +9,7 @@ public class WhyDoesThisExist {
     static Random r = new Random();
     static String result;
     static String result2;
-    static final int QUIZ_QUESTIONS = 16;
+    static final int QUIZ_QUESTIONS = 18;
     static String[] questions = new String[QUIZ_QUESTIONS];
     static String[] answers = new String[QUIZ_QUESTIONS];
     static File f1;
@@ -24,8 +24,9 @@ public class WhyDoesThisExist {
             System.out.println("Anyways, let's continue.");
             
             result = s.nextLine().trim();
-            
-            if (result.equalsIgnoreCase("sudoku")) {
+            if (result == result.toUpperCase()) {
+                System.out.println("Stop yelling!");
+            } else if (result.equalsIgnoreCase("sudoku")) {
                 System.out.println("...what?");
             } else if (result.contains("sudo")) {
                 System.out.println("Haha sudo that's a funny joke.");
@@ -54,16 +55,28 @@ public class WhyDoesThisExist {
             } else if (result.contains("hello") || result.equalsIgnoreCase("hi") || result.equalsIgnoreCase("hi there")) {
                 System.out.println("Nice to meet you.");
             } else if (result.contains("nice to meet you")) {
-                System.out.println("This is boring you, isn't it? You could always type \"commands\" for something a bit more interesting.");
-            } else if (result.contains("weather")) {
-                System.out.println("I don't know what the weather is like. But I can find out if you let me know where you are...\nAllow WhyDoesThisExist.java to access your current location? (y/n)");
-                result = s.nextLine();
-                if (result.equalsIgnoreCase("y")) {
-                    System.out.println("Thanks, but no thanks.\nI just don't feel like looking up the weather for you.\nThat's Google's job, not mine.");
-                    allowLocation = true;
+                System.out.println("Nice to meet you, my friend!");
+            } else if (result.contains("friend")) {
+                System.out.println("Lets be friends forever!");
+                if (allowLocation || f1.exists()) {
+                    for (int i = 0; i < 7; i++) {
+                        System.out.println("forever!");
+                    }
+                    System.out.println("FOREVER.\n\n\n");
                 }
-                else if (result.equalsIgnoreCase("n")) System.out.println("Why would you not want to give your location information to me?\nHmm? What could be the reason?\n...\n...\nTELLMEWHEREYOULIVE\n...\n...\n...");
-                else System.out.println("Jerk. Put in y or n next time. I mean, it's just the weather so I'm not that mad about it, but still.");
+            } else if (result.contains("weather")) {
+                if (allowLocation) {
+                    System.out.println("You're really adamant about this whole weather thing, huh? Well, fine. Here: https://www.google.com/search?q=weather");
+                } else {
+                    System.out.println("I don't know what the weather is like. But I can find out if you let me know where you are...\nAllow WhyDoesThisExist.java to access your current location? (y/n)");
+                    result = s.nextLine();
+                    if (result.equalsIgnoreCase("y")) {
+                        System.out.println("Thanks, but no thanks.\nI just don't feel like looking up the weather for you.\nThat's Google's job, not mine.");
+                        allowLocation = true;
+                    }
+                    else if (result.equalsIgnoreCase("n")) System.out.println("Why would you not want to give your location information to me?\nHmm? What could be the reason?\n...\n...\nTELLMEWHEREYOULIVE\n...\n...\n...");
+                    else System.out.println("Jerk. Put in y or n next time. I mean, it's just the weather so I'm not that mad about it, but still.");
+                }
             } else if (result.contains("dog") || result.contains("cat") || result.contains("pet") || result.contains("fish") || result.contains("hamster") || result.contains("guinea pig") || result.contains("animal")) {
                 System.out.println("Tell me more about your family.");
             } else if (result.contains("mother") || result.contains("mom") || result.contains("father") || result.contains("dad") || result.contains("brother") || result.contains("sister") || result.contains("parent") || result.contains("family")) {
@@ -339,7 +352,7 @@ public class WhyDoesThisExist {
                         }
                     }
                     pingCount++;
-                    if (pingCount >= 50) {
+                    if (pingCount >= 100) {
                         System.out.println("Well, you just wasted... like, an hour. Well done.\nYOU WIN. CONGLATURATIONS. A WINNER IS YOU.\nAs a prize, please take this one-time usable termination command: getouttamahface");
                         try {
                             PrintWriter writer = new PrintWriter("terminatorcode.txt", "UTF-8");
@@ -390,7 +403,7 @@ public class WhyDoesThisExist {
         questions[0] = "Why did you launch this program?";
         answers[0] =   "Because I was BORED! WE'RE ALL BORED!";
         questions[1] = "Have you gone to extreme lengths to annoy me before?";
-        if (f2.exists()) {
+        if (f1.exists()) {
             answers[1] = "yes";
         } else {
             answers[1] = "no";
@@ -423,6 +436,10 @@ public class WhyDoesThisExist {
         answers[14] =   "Neuroscientific Geology";
         questions[15] = "What do you do when in doubt and cold weather?";
         answers[15] =   "Here";
+        questions[16] = "If you have three slices of cereal in a bowl of soup consisting of 87% leafy greens, is it a cracker?";
+        answers[16] =   "wut";
+        questions[17] = "";
+        answers[17] =   "";
         
         if (f1.exists() && !f2.exists()) {
             System.out.println("You're BACK? I thought I told you not to come back.\nYeah, I remember.\nNow are you going to apologize? (y/n)");
