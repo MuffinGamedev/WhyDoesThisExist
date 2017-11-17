@@ -59,10 +59,19 @@ public class WhyDoesThisExist {
             } else if (result.contains("friend")) {
                 System.out.println("Lets be friends forever!");
                 if (allowLocation || f1.exists()) {
-                    for (int i = 0; i < 7; i++) {
+                    for (int i = 0; i < 20; i++) {
                         System.out.println("forever!");
                     }
-                    System.out.println("FOREVER.\n\n\n");
+                    for (int i = 0; i < 20; i++) {
+                        System.out.println("forever.");
+                    }
+                    for (int i = 0; i < 20; i++) {
+                        System.out.println("FOREVER.");
+                    }
+                    for (int i = 0; i < 20; i++) {
+                        System.out.println("F O R E V E R.");
+                    }
+                    System.out.println("\n\n");
                 }
             } else if (result.contains("weather")) {
                 if (allowLocation) {
