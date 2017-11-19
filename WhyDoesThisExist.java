@@ -234,13 +234,21 @@ public class WhyDoesThisExist {
                 do{
                     System.out.println ("Please enter a Scrabble accepted word to determine its point value.");
                     String word = scan.nextLine().toLowerCase(); //this is where the user enters the word
+                    if (word.equals("break;"))
+                    {System.out.println ("Okay, boss!"); 
+                    break;}
                     sum = 0;
-                    for (int i = 0; i < word.length(); i++) {
+                    try{
+                        for (int i = 0; i < word.length(); i++) {
                         sum += points[alphabet.indexOf(word.substring(i,i+1))];
                     }
                     System.out.println ("That word is worth " + sum + " points!");
                     if (word.equalsIgnoreCase("hi"))
                         System.out.println ("That was terrible! what did you do, type \"hi\"?!?!");
+                    if (word.equalsIgnoreCase("escape")||word.equalsIgnoreCase("quit")||word.equalsIgnoreCase("leave"))
+                        System.out.println ("That's not a very good scrabble word! What? How do you leave ScrabblePointReader? You don't.");
+                    if (word.equalsIgnoreCase("break"))
+                        System.out.println ("Compiler Error: Semicolon expected line 246");
                     else if (sum <= 12) 
                         System.out.println ("Okay, come on, you weren't even trying. Honestly, that was terrible.");
                     else if (13 <= sum && sum <= 35)
@@ -249,7 +257,9 @@ public class WhyDoesThisExist {
                         System.out.println ("There is an 9999% chance that that word is not English. If it is, you're a hacker");
                     else 
                         System.out.println ("I said \"Scrabble accepted\", did I not? \n \nfreakin' idiot \n"); 
-                }// end of do
+                }// end of do 
+                } catch (ArrayIndexOutOfBoundException) 
+                {System.out.println("THERE'S NO SPACES OR PUNCTUALTION IN SCRABBLE YOU DUMMY!")}
                 while (true);
             } else if (result.equalsIgnoreCase("\\d") || result.equalsIgnoreCase("break;") || result.equalsIgnoreCase("break")) {
                 System.out.println("Wow, okay, you're smarter than I originally thought.\nNot saying much though.\nEither way, that's not working on me!");
