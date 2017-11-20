@@ -231,7 +231,7 @@ public class WhyDoesThisExist {
                 String alphabet = "abcdefghijklmnopqrstuvwxyz";
                 int [] points = {1, 3, 3, 2, 1, 4, 2, 2, 1, 8, 5, 1, 3, 1, 1, 3, 10, 1, 1, 1, 1, 4, 4, 8, 4, 10};
                 System.out.println ("Welcome to ScrabblePointReader 2.0!");
-                do{
+                while (true) {
                     System.out.println ("Please enter a Scrabble accepted word to determine its point value.");
                     String word = scan.nextLine().toLowerCase(); //this is where the user enters the word
                     if (word.equals("break;"))
@@ -257,10 +257,9 @@ public class WhyDoesThisExist {
                         System.out.println ("There is an 9999% chance that that word is not English. If it is, you're a hacker");
                     else 
                         System.out.println ("I said \"Scrabble accepted\", did I not? \n \nfreakin' idiot \n"); 
-                }// end of do 
-                } catch (ArrayIndexOutOfBoundException) 
-                {System.out.println("THERE'S NO SPACES OR PUNCTUALTION IN SCRABBLE YOU DUMMY!")}
-                while (true);
+                } catch (ArrayIndexOutOfBoundException e) 
+                {System.out.println("THERE'S NO SPACES OR PUNCTUATION IN SCRABBLE YOU DUMMY!")}
+                }
             } else if (result.equalsIgnoreCase("\\d") || result.equalsIgnoreCase("break;") || result.equalsIgnoreCase("break")) {
                 System.out.println("Wow, okay, you're smarter than I originally thought.\nNot saying much though.\nEither way, that's not working on me!");
             } else if (result.equalsIgnoreCase("why does this exist") || result.equalsIgnoreCase("whydoesthisexist")){
