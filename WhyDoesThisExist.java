@@ -248,7 +248,7 @@ public class WhyDoesThisExist {
                     if (word.equalsIgnoreCase("escape")||word.equalsIgnoreCase("quit")||word.equalsIgnoreCase("leave"))
                         System.out.println ("That's not a very good scrabble word! What? How do you leave ScrabblePointReader? You don't.");
                     if (word.equalsIgnoreCase("break"))
-                        System.out.println ("Compiler Error: Semicolon expected line 246");
+                        System.out.println ("Compiler Error: Semicolon expected.");
                     else if (sum <= 12) 
                         System.out.println ("Okay, come on, you weren't even trying. Honestly, that was terrible.");
                     else if (13 <= sum && sum <= 35)
