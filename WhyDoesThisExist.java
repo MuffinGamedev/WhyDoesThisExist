@@ -472,8 +472,8 @@ public class WhyDoesThisExist {
         answers[15] =   "Here";
         questions[16] = "If you have three slices of cereal in a bowl of soup consisting of 87% leafy greens, is it a cracker?";
         answers[16] =   "wut";
-        questions[17] = "...";
-        answers[17] =   "...";
+        questions[17] = "Who is the best superhero?";
+        answers[17] =   "Cheddar Man";
         
         if (f1.exists() && !f2.exists()) {
             System.out.println("You're BACK? I thought I told you not to come back.\nYeah, I remember.\nNow are you going to apologize? (y/n)");
