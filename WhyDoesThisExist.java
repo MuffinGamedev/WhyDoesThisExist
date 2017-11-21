@@ -295,7 +295,7 @@ public class WhyDoesThisExist {
                 String answer = s.nextLine();
                 if (answer.equalsIgnoreCase ("y")){
                     System.out.println ("\n Ok, boss!\n");
-                    int i = 100;
+                    int i = 10000;
                     while (i>=1){
                         System.out.println (i+" bottles of beer on the wall \n "+ i-- +" Bottles of beer \n Take one down, pass it around, \n" + i + " bottles of beer on the wall");}
                     System.out.println ("Thanks for listening!");}
