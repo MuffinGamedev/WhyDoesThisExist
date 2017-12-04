@@ -238,10 +238,8 @@ public class WhyDoesThisExist {
                     {System.out.println ("Okay, boss!"); 
                     break;}
                     sum = 0;
-                    try{
                         for (int i = 0; i < word.length(); i++) {
                         sum += points[alphabet.indexOf(word.substring(i,i+1))];
-                    }
                     System.out.println ("That word is worth " + sum + " points!");
                     if (word.equalsIgnoreCase("hi"))
                         System.out.println ("That was terrible! what did you do, type \"hi\"?!?!");
@@ -257,8 +255,6 @@ public class WhyDoesThisExist {
                         System.out.println ("There is an 9999% chance that that word is not English. If it is, you're a hacker");
                     else 
                         System.out.println ("I said \"Scrabble accepted\", did I not? \n \nfreakin' idiot \n"); 
-                } catch (ArrayIndexOutOfBoundException e) 
-                {System.out.println("THERE'S NO SPACES OR PUNCTUATION IN SCRABBLE YOU DUMMY!")}
                 }
             } else if (result.equalsIgnoreCase("\\d") || result.equalsIgnoreCase("break;") || result.equalsIgnoreCase("break")) {
                 System.out.println("Wow, okay, you're smarter than I originally thought.\nNot saying much though.\nEither way, that's not working on me!");
