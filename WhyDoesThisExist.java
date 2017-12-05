@@ -256,6 +256,7 @@ public class WhyDoesThisExist {
                     else 
                         System.out.println ("I said \"Scrabble accepted\", did I not? \n \nfreakin' idiot \n"); 
                 }
+                }
             } else if (result.equalsIgnoreCase("\\d") || result.equalsIgnoreCase("break;") || result.equalsIgnoreCase("break")) {
                 System.out.println("Wow, okay, you're smarter than I originally thought.\nNot saying much though.\nEither way, that's not working on me!");
             } else if (result.equalsIgnoreCase("why does this exist") || result.equalsIgnoreCase("whydoesthisexist")){
