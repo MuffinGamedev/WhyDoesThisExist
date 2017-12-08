@@ -321,8 +321,8 @@ public class WhyDoesThisExist {
                 System.out.println("Jellybeans jellybeans jellybeans.");
             } else if (result.contains("LetsBreakTheComputer.java")) {
                 System.out.println("youtu.be/aFZ7bBaYpcw");
-            } else if (result.contains("FizzBuzz")) {
-                for (int i = 1; i <= 1000; i++) {
+            } else if (result.contains("FizzBuzz")||result.contains ("fizzbuzz")||result.contains("fizzBuzz")) {
+                for (int i = 1; i <= 10000; i++) {
                     if (i % 3 == 0) System.out.print("Fizz");
                     if (i % 5 == 0) System.out.print("Buzz");
                     if (i % 3 != 0 && i % 5 != 0) System.out.print(i);
