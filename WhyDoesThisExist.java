@@ -140,13 +140,13 @@ public class WhyDoesThisExist {
                         dice = rand.nextInt(6) + 1;
                     }
                     if (ans > 6 && ans < 20)
-                        System.out.println("What is this? Dungeons & Dragons?! \n \n NERRRRRRD\n \nIt was " + dice + ".");
+                        System.out.println("What is this? Dungeons & Dragons?!\n\nNERRRRRRD\n\nIt was " + dice + ".");
                     else if (ans > 20 || ans < 1)
                         System.out.println("That's not even a number on the die, ya freakin' idiot! It was " + dice + ".");
                     else
                         System.out.println("Nope, sorry! It was "+  dice +"!");
                 }
-                System.out.println("Oops. \n You've been trolled. \n  The dice roll, but if you're right, they lie to you. \n   Sorry not sorry \n    :P");
+                System.out.println("Oops.\n You've been trolled.\n  The dice roll, but if you're right, they lie to you.\n   Sorry not sorry\n    :P");
             } else if (result.equalsIgnoreCase("Anyways, let's continue")) {
                 System.out.println("Hey! That's my line! Look!");
             } else if (result.contains("cake") || result.contains("portal") || result.contains("GLaDOS") || result.contains("still alive")){
@@ -164,7 +164,7 @@ public class WhyDoesThisExist {
                     System.out.println("NO! I CANNOT BELIEVE YOU! HOW DARE YOU DO THAT TO GLaDOS'S AMAZING COMPOSITION!");
                     System.out.println("I THOUGH WE HAD IT! I THOUGHT WE COULD DO IT! BUT YOU CRUSHED MY DREAMS! PAIN! SUFFERING! LEAVE!");
                 } else {
-                    System.out.println("still alive.\noh my gosh, you made me so happy... I think I'm going to cry. I'm sorry for anything mean I ever said or did to you. \nyou're free to go\n you have my gratitude");
+                    System.out.println("still alive.\nOh my gosh, you made me so happy... I think I'm going to cry. I'm sorry for anything mean I ever said or did to you.\nYou're free to go.\nYou have my gratitude.");
                     break;
                 }
             } else if (result.contains("scrabble")){
@@ -197,7 +197,7 @@ public class WhyDoesThisExist {
                     else if (36 <= sum && sum <= 100)
                         System.out.println ("There is an 9999% chance that that word is not English. If it is, you're a hacker");
                     else 
-                        System.out.println ("I said \"Scrabble accepted\", did I not? \n \nfreakin' idiot \n"); 
+                        System.out.println ("I said \"Scrabble accepted\", did I not?\n\nfreakin' idiot...\n"); 
                 }
                 }
             } else if (result.equalsIgnoreCase("\\d") || result.equalsIgnoreCase("break;") || result.equalsIgnoreCase("break")) {
@@ -234,18 +234,18 @@ public class WhyDoesThisExist {
                 System.out.println ("Do you want me to sing bottles of beer? (y/n) Quick reminder, I don't like jerks.");
                 String answer = s.nextLine();
                 if (answer.equalsIgnoreCase ("y")){
-                    System.out.println ("\n Ok, boss!\n");
+                    System.out.println ("\nOk, boss!\n");
                     int i = 10000;
                     while (i>=1){
-                        System.out.println (i+" bottles of beer on the wall \n "+ i-- +" Bottles of beer \n Take one down, pass it around, \n" + i + " bottles of beer on the wall");}
+                        System.out.println (i+" bottles of beer on the wall\n"+ i-- +" Bottles of beer\nTake one down, pass it around,\n" + i + " bottles of beer on the wall");}
                     System.out.println ("Thanks for listening!");}
                 else if (answer.equalsIgnoreCase ("n")) {
-                    System.out.println ("Oh. \n Ok, then. sorry to inconvinience you. \n I mean, really. Why'd you ask me to sing if you didn't want to hear me sing? \n Humans make no sense, I'm telling you. I think people like you can finally appreciate talent only to crush my dreams. \n \n Jerk. \n \n");}
+                    System.out.println ("Oh.\nOk, then. Sorry to inconvinience you.\nI mean, really. Why'd you ask me to sing if you didn't want to hear me sing?\nHumans make no sense, I'm telling you. I think people like you can finally appreciate talent only to crush my dreams.\n\nJerk.\n\n");}
                 else {
                     if (f2.exists()) {
                         System.out.println("I thought you learned.");
                     } else {
-                        System.out.println ("Dude. There's two options. Pick one or the other. Don't try to be clever. \nJerk. Actually, you know what? I'm sick and tired of people like you not giving proper responses to my questions.\nA bunch of idiots worked VERY HARD to write my code, and they really do not appreciate you not giving me the answers that I request. I don't want to deal with you anymore.\nGet outta my program.");
+                        System.out.println ("Dude. There's two options. Pick one or the other. Don't try to be clever.\nJerk. Actually, you know what? I'm sick and tired of people like you not giving proper responses to my questions.\nA bunch of idiots worked VERY HARD to write my code, and they really do not appreciate you not giving me the answers that I request. I don't want to deal with you anymore.\nGet outta my program.");
                         try {
                             PrintWriter writer = new PrintWriter("youreahorribleperson.txt", "UTF-8");
                             writer.close();
@@ -259,7 +259,7 @@ public class WhyDoesThisExist {
             } else if (result.contains("joke")) {
                 System.out.println("The fact that you can't come up with your own commands and are just putting in things people say to Siri.");
             } else if (result.contains("story")) {
-                System.out.println("Once upon a time, someone decided to launch this program.\nThen they tried asking it stuff and realized that they only get sarcastic responses. Because I hate you\nAnd they all lived happily ever after. The end.");
+                System.out.println("Once upon a time, someone decided to launch this program.\nThen they tried asking it stuff and realized that they only get sarcastic responses. Because I hate you.\nAnd they all lived happily ever after. The end.");
             } else if (result.contains("homework")) {
                 System.out.println("Jellybeans jellybeans jellybeans.");
             } else if (result.contains("LetsBreakTheComputer.java")) {
