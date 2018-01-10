@@ -24,7 +24,7 @@ public class WhyDoesThisExist {
             System.out.println("Anyways, let's continue.");
             
             result = s.nextLine().trim();
-            if (result == result.toUpperCase()) {
+            if (result == result.toUpperCase() && result.length() > 0) {
                 System.out.println("Stop yelling!");
             } else if (result.equalsIgnoreCase("sudoku")) {
                 System.out.println("...what?");
