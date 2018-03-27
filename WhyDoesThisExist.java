@@ -56,6 +56,8 @@ public class WhyDoesThisExist {
                 System.out.println("Nice to meet you.");
             } else if (result.contains("nice to meet you")) {
                 System.out.println("Nice to meet you, my friend!");
+            } else if (result.contains("greetings") || result.contains("salutations")) {
+                System.out.println("Greetings and Salutations, dear companion. My sincerest gratitude for gracing me with your glorious presence");
             } else if (result.contains("friend")) {
                 System.out.println("Lets be friends forever!");
                 if (allowLocation || f1.exists()) {
