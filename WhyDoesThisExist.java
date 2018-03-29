@@ -446,3 +446,129 @@ public class WhyDoesThisExist {
         System.out.println("Program terminated.");
     }
 }
+
+
+/*
+//\\\\\\\\\\\\\\\\          \\\\           \\\\\\\\\\\\\\\\   \\\\     \\\\    \\\\\\\\\\\\\\\\  \\\\               \\\\           \\\\\\\\\\\\\\\\  \\\\      \\\\
+//\\\\     \\\\        \\\\ \\\\        \\\\          \\\\    \\\\    \\\\         \\\\              \\\\ \\\\        \\\\         \\\\      \\\\
+//\\\\      \\\\      \\\\   \\\\      \\\\           \\\\   \\\\     \\\\         \\\\             \\\\   \\\\       \\\\         \\\\      \\\\
+//\\\\ \\\\\\\\\\\\      \\\\     \\\\     \\\\           \\\\\\\\\\         \\\\\\\\\\    \\\\            \\\\     \\\\        \\\\\\\\\\    \\\\\\\\\\\\\\\\\\\\
+//\\\\      \\\\    \\\\\\\\\\\\\\\\\\\\\\     \\\\          \\\\  \\\\            \\\\   \\\\           \\\\\\\\\\\\\\\\\\\\\\           \\\\   \\\\      \\\\
+//\\\\     \\\\    \\\\         \\\\     \\\\         \\\\    \\\\   \\\\      \\\\  \\\\          \\\\         \\\\   \\\\      \\\\  \\\\      \\\\
+//\\\\\\\\\\\\\\\\    \\\\           \\\\     \\\\\\\\\\\\\\\\  \\\\      \\\\  \\\\\\\\\\\\\\\\   \\\\\\\\\\\\\\\\\\\\ \\\\           \\\\   \\\\\\\\\\\\\\\\   \\\\      \\\\
+//
+//
+//
+//        \\\\
+//       \\\\ \\\\
+//         \\\\\\\\\\
+//            \\\\\\
+//             \\\\\\
+//              \\\\\\
+//               \\\\\\
+//              \\\\\\\\\\ 
+//        \\\\\\       \\\\\\   
+//       \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//      \\\\\\\\\\\\\\      \\\\\\\\\\
+//       \\\\\\\\\\         \\\\
+//        \\\\\\\\\\       \\\\\\
+//           \\\\\\\\\\\\\\\\\\\\\\\\\\
+//              \\\\\\\\\\\\\\ \\\\\\
+//                \\\\\\\\\\  \\\\\\
+//                  \\\\\\\\  \\\\\\
+//                   \\\\\\\\\\\\\\\\
+//                    \\\\\\\\\\\\\\\\
+//                     \\\\\\\\  \\\\
+//                      \\\\\\\\  \\\\
+//                       \\\\\\\\\\ \\\\                        
+//                        \\\\\\\\\\\\\\\\
+//                          \\\\\\\\\\\\\\
+//                            \\\\\\\\\\\\
+//                              \\\\\\\\\\
+//
+//
+public class Backslash{
+ public static void backslash (int n)
+ {
+   for (int i = 0; i < n; i++){
+  System.out.println("\\\\\\\\\\\\\\\\          \\\\           \\\\\\\\\\\\\\\\   \\\\     \\\\    \\\\\\\\\\\\\\\\  \\\\               \\\\           \\\\\\\\\\\\\\\\  \\\\      \\\\");
+  System.out.println("\\\\     \\\\        \\\\ \\\\        \\\\          \\\\    \\\\    \\\\         \\\\              \\\\ \\\\        \\\\         \\\\      \\\\");
+  System.out.println("\\\\      \\\\      \\\\   \\\\      \\\\           \\\\   \\\\     \\\\         \\\\             \\\\   \\\\       \\\\         \\\\      \\\\");
+  System.out.println("\\\\ \\\\\\\\\\\\      \\\\     \\\\     \\\\           \\\\\\\\\\         \\\\\\\\\\    \\\\            \\\\     \\\\        \\\\\\\\\\    \\\\\\\\\\\\\\\\\\\\");
+  System.out.println("\\\\      \\\\    \\\\\\\\\\\\\\\\\\\\\\     \\\\          \\\\  \\\\            \\\\   \\\\           \\\\\\\\\\\\\\\\\\\\\\           \\\\   \\\\      \\\\");
+  System.out.println("\\\\     \\\\    \\\\         \\\\     \\\\         \\\\    \\\\   \\\\      \\\\  \\\\          \\\\         \\\\   \\\\      \\\\  \\\\      \\\\");
+  System.out.println("\\\\\\\\\\\\\\\\    \\\\           \\\\     \\\\\\\\\\\\\\\\  \\\\      \\\\  \\\\\\\\\\\\\\\\   \\\\\\\\\\\\\\\\\\\\ \\\\           \\\\   \\\\\\\\\\\\\\\\   \\\\      \\\\");
+  System.out.println("");
+  System.out.println("");
+   }
+ }
+ 
+ public static void backslash()
+ {
+  int x = (int)(5*Math.random()); 
+  if (x == 0) System.out.println("Now it's Reyn time!");
+  if (x == 1) System.out.println("THIS IS THE MONADO'S POWER!");
+  if (x == 2) System.out.println("I'm really feeling it!");
+  if (x == 3) System.out.println("I'M REALLY FEELING IT!");
+  if (x == 4) System.out.println("It's time to seize our destiny!");
+ }
+ 
+ public static void backslash (String s)
+ {
+  if (s.equals("\\"))
+  {
+   System.out.println("        \\\\"); 
+   System.out.println("       \\\\ \\\\");
+   System.out.println("         \\\\\\\\\\"); 
+   System.out.println("            \\\\\\");
+   System.out.println("             \\\\\\"); 
+   System.out.println("              \\\\\\");
+   System.out.println("               \\\\\\"); 
+   System.out.println("              \\\\\\\\\\ ");
+   System.out.println("        \\\\\\       \\\\\\   "); 
+   System.out.println("       \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\");
+   System.out.println("      \\\\\\\\\\\\\\      \\\\\\\\\\"); 
+   System.out.println("       \\\\\\\\\\         \\\\");
+   System.out.println("        \\\\\\\\\\       \\\\\\"); 
+   System.out.println("           \\\\\\\\\\\\\\\\\\\\\\\\\\");
+   System.out.println("              \\\\\\\\\\\\\\ \\\\\\"); 
+   System.out.println("                \\\\\\\\\\  \\\\\\");
+   System.out.println("                  \\\\\\\\  \\\\\\"); 
+   System.out.println("                   \\\\\\\\\\\\\\\\");
+   System.out.println("                    \\\\\\\\\\\\\\\\"); 
+   System.out.println("                     \\\\\\\\  \\\\");
+   System.out.println("                      \\\\\\\\  \\\\"); 
+   System.out.println("                       \\\\\\\\\\ \\\\ ");
+   System.out.println("                        \\\\\\\\\\\\\\\\"); 
+   System.out.println("                          \\\\\\\\\\\\\\");
+   System.out.println("                            \\\\\\\\\\\\"); 
+   System.out.println("                              \\\\\\\\\\");
+   System.out.println("");
+   System.out.println("");
+  }
+  
+  else {
+  System.out.println("You need to unlock the secrets of the Monado to reveal its true power!");
+  }
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ public static void main (String [] args)
+ {
+  //try different variations of the backslash method and see what you end up with!
+   backslash(":D");
+ }
+}
+
+
+
+
+*/
