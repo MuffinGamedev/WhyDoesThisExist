@@ -60,8 +60,6 @@ public class WhyDoesThisExist {
                 System.out.println("Greetings and Salutations, dear companion. My sincerest gratitude for gracing me with your glorious presence");
             } else if (result.contains("friend")) {
                 System.out.println("Let's be friends forever!");
-            } else if (result.contains("secret")) {
-                System.out.println("I don't have any secrets! I'm just your friendly neighborhood virus!");
                 if (allowLocation || f1.exists()) {
                     for (int i = 0; i < 20; i++) {
                         System.out.println("forever!");
@@ -77,6 +75,8 @@ public class WhyDoesThisExist {
                     }
                     System.out.println("\n\n");
                 }
+            } else if (result.contains("secret")) {
+                System.out.println("I don't have any secrets! I'm just your friendly neighborhood virus!");
             } else if (result.contains("weather")) {
                 if (allowLocation) {
                     System.out.println("You're really adamant about this whole weather thing, huh? Well, fine. Here: https://www.google.com/search?q=weather");
