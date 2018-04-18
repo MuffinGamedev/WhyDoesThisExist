@@ -266,8 +266,47 @@ public class WhyDoesThisExist {
                 System.out.println("Once upon a time, someone decided to launch this program.\nThen they tried asking it stuff and realized that they only get sarcastic responses. Because I hate you.\nAnd they all lived happily ever after. The end.");
             } else if (result.contains("homework")) {
                 System.out.println("Jellybeans jellybeans jellybeans.");
+            } else if (result.contains("backslash")) {
+                System.out.println("\\\\\\\\\\\\\\\\          \\\\           \\\\\\\\\\\\\\\\   \\\\     \\\\    \\\\\\\\\\\\\\\\  \\\\               \\\\           \\\\\\\\\\\\\\\\  \\\\      \\\\");
+  System.out.println("\\\\     \\\\        \\\\ \\\\        \\\\          \\\\    \\\\    \\\\         \\\\              \\\\ \\\\        \\\\         \\\\      \\\\");
+  System.out.println("\\\\      \\\\      \\\\   \\\\      \\\\           \\\\   \\\\     \\\\         \\\\             \\\\   \\\\       \\\\         \\\\      \\\\");
+  System.out.println("\\\\ \\\\\\\\\\\\      \\\\     \\\\     \\\\           \\\\\\\\\\         \\\\\\\\\\    \\\\            \\\\     \\\\        \\\\\\\\\\    \\\\\\\\\\\\\\\\\\\\");
+  System.out.println("\\\\      \\\\    \\\\\\\\\\\\\\\\\\\\\\     \\\\          \\\\  \\\\            \\\\   \\\\           \\\\\\\\\\\\\\\\\\\\\\           \\\\   \\\\      \\\\");
+  System.out.println("\\\\     \\\\    \\\\         \\\\     \\\\         \\\\    \\\\   \\\\      \\\\  \\\\          \\\\         \\\\   \\\\      \\\\  \\\\      \\\\");
+  System.out.println("\\\\\\\\\\\\\\\\    \\\\           \\\\     \\\\\\\\\\\\\\\\  \\\\      \\\\  \\\\\\\\\\\\\\\\   \\\\\\\\\\\\\\\\\\\\ \\\\           \\\\   \\\\\\\\\\\\\\\\   \\\\      \\\\");
+  System.out.println("");
+  System.out.println("");
             } else if (result.contains("LetsBreakTheComputer.java")) {
                 System.out.println("youtu.be/aFZ7bBaYpcw");
+            } else if (result.contains("xenoblade") || result.contains("monado") || result.contains("really feeling it")) {
+                System.out.println("        \\\\"); 
+   System.out.println("       \\\\ \\\\");
+   System.out.println("         \\\\\\\\\\"); 
+   System.out.println("            \\\\\\");
+   System.out.println("             \\\\\\"); 
+   System.out.println("              \\\\\\");
+   System.out.println("               \\\\\\"); 
+   System.out.println("              \\\\\\\\\\ ");
+   System.out.println("        \\\\\\       \\\\\\   "); 
+   System.out.println("       \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\");
+   System.out.println("      \\\\\\\\\\\\\\      \\\\\\\\\\"); 
+   System.out.println("       \\\\\\\\\\         \\\\");
+   System.out.println("        \\\\\\\\\\       \\\\\\"); 
+   System.out.println("           \\\\\\\\\\\\\\\\\\\\\\\\\\");
+   System.out.println("              \\\\\\\\\\\\\\ \\\\\\"); 
+   System.out.println("                \\\\\\\\\\  \\\\\\");
+   System.out.println("                  \\\\\\\\  \\\\\\"); 
+   System.out.println("                   \\\\\\\\\\\\\\\\");
+   System.out.println("                    \\\\\\\\\\\\\\\\"); 
+   System.out.println("                     \\\\\\\\  \\\\");
+   System.out.println("                      \\\\\\\\  \\\\"); 
+   System.out.println("                       \\\\\\\\\\ \\\\ ");
+   System.out.println("                        \\\\\\\\\\\\\\\\"); 
+   System.out.println("                          \\\\\\\\\\\\\\");
+   System.out.println("                            \\\\\\\\\\\\"); 
+   System.out.println("                              \\\\\\\\\\");
+   System.out.println("");
+   System.out.println("");
             } else if (result.contains("FizzBuzz")||result.contains ("fizzbuzz")||result.contains("fizzBuzz")) {
                 for (int i = 1; i <= 10000; i++) {
                     if (i % 3 == 0) System.out.print("Fizz");
